@@ -5,8 +5,8 @@ import 'character_models.dart';
 
 class ApiService {
   static const String _baseUrl = 'gateway.marvel.com';
-  static const String _publicKey = 'TU_PUBLIC_KEY';
-  static const String _privateKey = 'TU_PRIVATE_KEY';
+  static const String _publicKey = '6bdd572173ed09439864ad440a5c7f8c';
+  static const String _privateKey = '1f2d93f8bbec63e6e21060a7cb825f614ac1cf5b';
 
   static String _generateHash(String ts) {
     final bytes = utf8.encode(ts + _privateKey + _publicKey);
